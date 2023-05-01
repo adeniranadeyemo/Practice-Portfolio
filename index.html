@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Practice Portfolio</title>
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<!--  -->
+	</head>
+	<body>
+		<!-- Main -->
+		<main>
+			<!-- Sidebar -->
+			<aside class="sidebar" data-sidebar>
+				<!--  -->
+				<div class="sidebar-info">
+					<figure class="avatar-box">
+						<img src="images/my-avatar.png" alt="Richard Hanrick" width="80" />
+					</figure>
+
+					<div class="info-content">
+						<h1 class="name" title="Adeniran Adeyemo">Adeniran Adeyemo 007</h1>
+						<p class="title">Web Developer</p>
+					</div>
+
+					<button class="info_more-btn" data-sidebar-btn>
+						<span>Show Contact</span>
+
+						<span class="material-icons-outlined">keyboard_arrow_down</span>
+					</button>
+				</div>
+
+				<div class="sidebar-info-more">
+					<div class="separator"></div>
+
+					<ul class="contacts-list">
+						<li class="contact-item">
+							<div class="icon-box">
+								<span class="material-icons-outlined"> email </span>
+							</div>
+
+							<div class="contact-info">
+								<p class="contact-title">Email</p>
+								<a href="mailto:niranadeniran1@gmail.com" class="contact-link"
+									>niranadeniran1@gmail.com</a
+								>
+							</div>
+						</li>
+
+						<li class="contact-item">
+							<div class="icon-box">
+								<span class="material-icons-outlined"> smartphone </span>
+							</div>
+
+							<div class="contact-info">
+								<p class="contact-title">Phone</p>
+								<a href="tel:+23480123456789" class="contact-link"
+									>+23480123456789</a
+								>
+							</div>
+						</li>
+
+						<li class="contact-item">
+							<div class="icon-box">
+								<span class="material-icons-outlined"> calendar_month </span>
+							</div>
+
+							<div class="contact-info">
+								<p class="contact-title">Birthday</p>
+								<time datetime="1400-06-23">June 23, 1400</time>
+							</div>
+						</li>
+
+						<li class="contact-item">
+							<div class="icon-box">
+								<span class="material-icons-outlined"> place </span>
+							</div>
+
+							<div class="contact-info">
+								<p class="contact-title">Location</p>
+								<address>Firenze, Italy.</address>
+							</div>
+						</li>
+					</ul>
+
+					<div class="separator"></div>
+
+					<ul class="social-list">
+						<li class="social-item">
+							<a href="" class="social-link">
+								<i class="bx bxl-facebook"></i>
+							</a>
+						</li>
+
+						<li class="social-item">
+							<a href="" class="social-link">
+								<i class="bx bxl-twitter"></i>
+							</a>
+						</li>
+
+						<li class="social-item">
+							<a href="" class="social-link">
+								<i class="bx bxl-instagram-alt"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+			<!-- Sidebar ends -->
+
+			<!-- Main Content -->
+			<div class="main-content">
+				<!-- navbar -->
+				<nav class="navbar">
+					<ul class="navbar-list">
+						<li class="navbar-item">
+							<button class="navbar-link active" data-nav-link>About</button>
+						</li>
+
+						<li class="navbar-item">
+							<button class="navbar-link" data-nav-link>Resume</button>
+						</li>
+
+						<li class="navbar-item">
+							<button class="navbar-link" data-nav-link>Portfolio</button>
+						</li>
+
+						<li class="navbar-item">
+							<button class="navbar-link" data-nav-link>Blog</button>
+						</li>
+
+						<li class="navbar-item">
+							<button class="navbar-link" data-nav-link>Contact</button>
+						</li>
+					</ul>
+				</nav>
+				<!-- About -->
+				<article class="about active" data-page="about">
+					<header>
+						<h2 class="h2 article-title">About me</h2>
+					</header>
+
+					<section class="about-text">
+						<p>
+							I'm an Anatomist and a Designer (Graphic & Brand designer) from
+							Ibadan, Nigeria, working in web development. Creating simple,
+							aesthetic and functional designs from clients' briefs which helps
+							to solve their problems is something I cherish.
+						</p>
+
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+							fugiat beatae quisquam sunt deserunt quae pariatur fugit maxime
+							soluta debitis, saepe optio ullam aliquid ipsa unde, iusto
+							incidunt facere voluptatibus.
+						</p>
+					</section>
+
+					<section class="services">
+						<h3 class="h4 service-title">What I do</h3>
+
+						<ul class="service-list">
+							<li class="service-item">
+								<div class="service-icon-box">
+									<img
+										src="images/icon-design.svg"
+										alt="design icon"
+										width="48"
+									/>
+								</div>
+
+								<div class="service-content-box">
+									<h4 class="h4 service-item-title">Graphic Design</h4>
+
+									<p class="service-item-text">
+										The most modern and high-quality designs made at a
+										professional level.
+									</p>
+								</div>
+							</li>
+
+							<li class="service-item">
+								<div class="service-icon-box">
+									<img
+										src="images/icon-dev.svg"
+										alt="web development icon"
+										width="48"
+									/>
+								</div>
+
+								<div class="service-content-box">
+									<h4 class="h4 service-item-title">Web development</h4>
+
+									<p class="service-item-text">
+										High-quality development of sites made at a professional
+										level.
+									</p>
+								</div>
+							</li>
+
+							<li class="service-item">
+								<div class="service-icon-box">
+									<img src="images/icon-app.svg" alt="phone icon" width="48" />
+								</div>
+
+								<div class="service-content-box">
+									<h4 class="h4 service-item-title">Mobile apps</h4>
+
+									<p class="service-item-text">
+										Professional developemt of iOS and Android applications.
+									</p>
+								</div>
+							</li>
+
+							<li class="service-item">
+								<div class="service-icon-box">
+									<img
+										src="images/icon-photo.svg"
+										alt="camera icon"
+										width="48"
+									/>
+								</div>
+
+								<div class="service-content-box">
+									<h4 class="h4 service-item-title">Photography</h4>
+
+									<p class="service-item-text">
+										High-quality photos of any category at a professional level.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</section>
+
+					<section class="testimonials">
+						<h3 class="h3 testimonials-title">Testimonials</h3>
+
+						<ul class="testimonials-list has-scrollbar">
+							<li class="testimonial-item">
+								<a href="#" class="content-card" data-testimonials-item>
+									<figure class="testimonials-avatar-box">
+										<img
+											src="images/avatar-1.png"
+											alt="Daniel Lewis"
+											width="60"
+											data-testimonials-avatar
+										/>
+									</figure>
+
+									<h4
+										class="h4 testimonials-item-title"
+										data-testimonials-title
+									>
+										Daniel Lewis
+									</h4>
+
+									<div class="testimonials-text" data-testimonials-text>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
+											iusto eos pariatur voluptatem error officiis et omnis
+											laborum magni? Asperiores beatae, quae.
+										</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="testimonial-item">
+								<a href="#" class="content-card" data-testimonials-item>
+									<figure class="testimonials-avatar-box">
+										<img
+											src="images/avatar-2.png"
+											alt="Jessica Miller"
+											width="60"
+											data-testimonials-avatar
+										/>
+									</figure>
+
+									<h4
+										class="h4 testimonials-item-title"
+										data-testimonials-title
+									>
+										Jessica Miller
+									</h4>
+
+									<div class="testimonials-text" data-testimonials-text>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
+											iusto eos pariatur voluptatem error officiis et omnis
+											laborum magni? Asperiores beatae, quae.
+										</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="testimonial-item">
+								<a href="#" class="content-card" data-testimonials-item>
+									<figure class="testimonials-avatar-box">
+										<img
+											src="images/avatar-3.png"
+											alt="Emily Evans"
+											width="60"
+											data-testimonials-avatar
+										/>
+									</figure>
+
+									<h4
+										class="h4 testimonials-item-title"
+										data-testimonials-title
+									>
+										Emily Evans
+									</h4>
+
+									<div class="testimonials-text" data-testimonials-text>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
+											iusto eos pariatur voluptatem error officiis et omnis
+											laborum magni? Asperiores beatae, quae.
+										</p>
+									</div>
+								</a>
+							</li>
+
+							<li class="testimonial-item">
+								<a href="#" class="content-card" data-testimonials-item>
+									<figure class="testimonials-avatar-box">
+										<img
+											src="images/avatar-4.png"
+											alt="Henry William"
+											width="60"
+											data-testimonials-avatar
+										/>
+									</figure>
+
+									<h4
+										class="h4 testimonials-item-title"
+										data-testimonials-title
+									>
+										Henry William
+									</h4>
+
+									<div class="testimonials-text" data-testimonials-text>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+											Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
+											iusto eos pariatur voluptatem error officiis et omnis
+											laborum magni? Asperiores beatae, quae.
+										</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</section>
+				</article>
+			</div>
+
+			<!-- Main Content ends -->
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>
