@@ -286,6 +286,7 @@ article.active {
   z-index: -1;
 }
 
+@media only screen and (min-width: 720px) {
 /* Main */
 main {
   margin: 15px 12px 75px;
@@ -598,3 +599,4 @@ main {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+} 
