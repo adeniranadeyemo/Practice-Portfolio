@@ -17,6 +17,10 @@ const selectValue = document.querySelector('[data-select-value]');
 const selectItem = document.querySelectorAll('[data-select-item]');
 //
 const filterItems = document.querySelectorAll('[data-filter-item]');
+//
+const form = document.querySelector('[data-form]');
+const formInputs = document.querySelectorAll('[data-form-input]');
+const formBtn = document.querySelector('[data-form-btn]')
 
 
 // element toggle function
@@ -78,3 +82,16 @@ for (const i in selectItem) {
     filterFunc(selectedValue);
   });
 };
+
+// event to all form input field
+for (const i in formInputs) {
+  formInputs[i].addEventListener('input', funtion() {
+
+    //check form validation
+    if (form.checkValidity()) {
+      formBtn.removeAttribute('disabled');
+    } else {
+      formBtn.setAttribute('disabled', '');
+    }
+  })
+}
