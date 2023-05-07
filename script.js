@@ -20,18 +20,21 @@ const filterItems = document.querySelectorAll('[data-filter-item]');
 //
 const form = document.querySelector('[data-form]');
 const formInputs = document.querySelectorAll('[data-form-input]');
-const formBtn = document.querySelector('[data-form-btn]')
+const formBtn = document.querySelector('[data-form-btn]');
+//
+const navigationLinks = document.querySelectorAll('[data-nav-link]');
+const pages = document.querySelectorAll('[data-page]');
 
 
 // element toggle function
 const elementToggle = function(elem) {
   elem.classList.toggle('active');
 };
-
+//
 sidebarBtn.addEventListener('click', function() {
-  elementToggle(sidebar);
-});
-
+  elementToggle(sidebar)
+})
+//
 // modal toggle function
 const testimonialsModalFunc = function() {
   modalContainer.classList.toggle('active');
@@ -51,18 +54,18 @@ for (let i = 0; i < testmonialsItem.length; i++) {
     testimonialsModalFunc();
   });
 }
-
-overlay.addEventListener('click', testimonialsModalFunc);
-modalCloseBtn.addEventListener('click', testimonialsModalFunc);
-
+//
+overlay.addEventListener('click', testimonialsModalFunc)
+modalCloseBtn.addEventListener('click', testimonialsModalFunc)
+//
 // select toggle
 select.addEventListener('click', function() {
   elementToggle(this);
 });
-
-// filter projects function
+//
+// // filter projects function
 const filterFunc = function(selectedValue) {
-  for (const i in filterItems) {
+  for (let i = 0; i < filterItems.length; i++) {
     if (selectedValue === 'all') {
       filterItems[i].classList.add('active');
     } else if (selectedValue === filterItems[i].dataset.category) {
@@ -73,8 +76,8 @@ const filterFunc = function(selectedValue) {
   };
 };
 
-// add event in all select items
-for (const i in selectItem) {
+// // add event in all select items
+for (let i = 0; i < selectItem.length; i++) {
   selectItem[i].addEventListener('click', function() {
     let selectedValue = this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
@@ -84,14 +87,32 @@ for (const i in selectItem) {
 };
 
 // event to all form input field
-for (const i in formInputs) {
-  formInputs[i].addEventListener('input', funtion() {
+for (let i = 0; i < formInputs.length; i++) {
+  formInputs[i].addEventListener('input', function() {
 
     //check form validation
     if (form.checkValidity()) {
       formBtn.removeAttribute('disabled');
     } else {
-      formBtn.setAttribute('disabled', '');
-    }
-  })
-}
+      formBtn.setAttribute('disabled');
+    };
+  });
+};
+
+// event to all nav links
+for (let i = 0; i < navigationLinks.length; i++) {
+  navigationLinks[i].addEventListener('click', function() {
+
+    for (let i = 0; i < pages.length; i++) {
+      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+        pages[i].classList.add('active');
+        navigationLinks[i].classList.add('active');
+        window.scrollTo(0, 0);
+      } else {
+        pages[i].classList.remove('active');
+        navigationLinks[i].classList.remove('active');
+      };
+    };
+
+  });
+};

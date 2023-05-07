@@ -231,16 +231,19 @@ article.active {
 .has-scrollbar::-webkit-scrollbar {
   width: 5px;
   height: 5px;
+  cursor: pointer;
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
   background: var(--onyx);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
   background: var(--orange-yellow-crayola);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .has-scrollbar::-webkit-scrollbar-button {
@@ -1229,6 +1232,11 @@ article.active {
     font-size: 1.2em;
   }
 
+  .form-btn span:nth-child(1) {
+    transform: rotate(-45deg);
+    font-size: 1.5em;
+  }
+
   .form-btn:hover {
     background: var(--bg-gradient-yellow-1);
   }
@@ -1242,10 +1250,10 @@ article.active {
     cursor: not-allowed;
   }
 
-  /* .form-btn:disabled:hover {
+  .form-btn:disabled:hover {
     background: var(--border-gradient-onyx);
   }
 
   .form-btn:disabled:hover::before {
     background: var(--bg-gradient-jet);
-  } */
+  }
