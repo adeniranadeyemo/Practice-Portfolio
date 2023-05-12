@@ -1034,7 +1034,7 @@ article.active {
     margin-bottom: 10px;
   }
 
-  .blog-post-lists {
+  .blog-post-list {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -1265,6 +1265,7 @@ article.active {
   }
 }
 
+/* // */
 /* > 580px */
 @media (min-width: 580px) {
 
@@ -1615,5 +1616,272 @@ article.active {
 
   .form-btn span {
     font-size: 18px;
+  }
+}
+
+/* /// */
+/* > 50em */
+@media (min-width: 50em) {
+
+  /* Components */
+  .sidebar, article {
+    width: 700px;
+  }
+
+  .has-scrollbar::-webkit-scrollbar-button {
+    width: 100px;
+  }
+
+  /* Sidebar */
+  .contacts-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 15px;
+  }
+
+  /* Navbar */
+  .navbar-link {
+    --fs-8: 17px;
+  }
+
+  /* Testimonials modal */
+  .testimonials-modal {
+    gap: 35px;
+    max-width: 680px;
+  }
+
+  .modal-avatar-box img {
+    width: 80px;
+  }
+
+  /* Portfolio */
+  .article-title {
+    padding-bottom: 20px;
+  }
+
+  .filter-select-box {
+    display: none;
+  }
+
+  .filter-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    padding-left: 5px;
+    margin-bottom: 30px;
+  }
+
+  .filter-item button {
+    color: var(--light-grey);
+    font-size: var(--fs-4);
+    transition: var(--transition-1);
+  }
+
+  .filter-item button:hover {
+    color: var(--ligth-grey-70);
+  }
+
+  .filter-item button.active {
+    color: var(--orange-yellow-crayola);
+  }
+
+  /* Portfolio and blog grid */
+  .project-list, .blog-post-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Contact */
+  .input-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  textarea {
+    grid-column: 1/3;
+  }
+
+  .form-btn {
+    width: max-content;
+    margin-left: auto;
+  }
+}
+
+/* /// */
+@media (min-width: 55em) {
+
+  /* Custom property */
+  :root {
+    /* Shadow */
+    --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
+    --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
+    --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
+  }
+
+  /* Components */
+  .sidebar, article {
+    width: 950px;
+    box-shadow: var(--shadow-1);
+  }
+
+  main {
+    margin-bottom: 60px
+  }
+
+  .main-content {
+    position: relative;
+    width: max-content;
+    margin: auto;
+  }
+
+  /* Navbar */
+  .navbar {
+    position: absolute;
+    bottom: auto;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: max-content;
+    border-radius: 0 20px;
+    padding: 0 20px;
+    box-shadow: none;
+  }
+
+  .navbar-list {
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .navbar-link {
+    font-weight: var(--fw-500);
+  }
+
+  /* About */
+  /* Service */
+  .service-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 25px;
+  }
+
+  /* Testimonials */
+  .testimonials-item {
+    min-width: calc(50% - 15px);
+  }
+
+  /* Clients */
+  .clients-item {
+    min-width: calc(25% - 38px);
+  }
+
+  .timeline-text {
+    font-size: var(--fs-4)
+  }
+
+  /* Portfolio */
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Blog */
+  .blog-banner-box {
+    height: 230px;
+  }
+}
+
+@media (min-width: 60em) {
+
+  /* Reset */
+  body::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: var(--smoky-black);
+  }
+
+  body::-webkit-scrollbar-thumb {
+    border: 5px solid var(--smoky-black);
+    background: hsla(0, 0%, 100%, 0.1);
+    border-radius: 20px;
+    box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
+      inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: hsla(0, 0%, 100%, 0.15);
+  }
+
+  body::-webkit-scrollbar-button {
+    height: 60px;
+  }
+
+  /* Components */
+  .sidebar, article {
+    width: auto;
+  }
+
+  article {
+    min-width: 100%;
+  }
+
+  /* Main */
+  main {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+  }
+
+  .main-content {
+    min-width: 75%;
+    width: 75%;
+    margin: 0;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: sticky;
+    top: .5em;
+    max-height: max-content;
+    height: 100%;
+    margin-bottom: 0;
+    padding-top: 60px;
+    z-index: 1;
+  }
+
+  .sidebar-info {
+    flex-direction: column;
+  }
+
+  .avatar-box img {
+    width: 150px;
+  }
+
+  .info-content .name {
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  .info-content .title {
+    margin: auto;
+  }
+
+  .info_more-btn {
+    display: none;
+  }
+
+  .sidebar-info-more {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .contacts-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info :is(.contact-link) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
