@@ -14,7 +14,8 @@ const modalText = document.querySelector('[data-modal-text]');
 //
 const select = document.querySelector('[data-select]');
 const selectValue = document.querySelector('[data-select-value]');
-const selectItem = document.querySelectorAll('[data-select-item]');
+const selectItems = document.querySelectorAll('[data-select-item]');
+const filterBtn = document.querySelectorAll('[data-filter-btn]');
 //
 const filterItems = document.querySelectorAll('[data-filter-item]');
 //
@@ -76,9 +77,24 @@ const filterFunc = function(selectedValue) {
   };
 };
 
+// event in all filter button items for large screen
+let lastClickedBtn = filterBtn[0];
+
+for (let i = 0; i < filterBtn.length; i++) {
+  filterBtn[i].addEventListener('click', function() {
+    let selectedValue = this.innerText.toLowerCase();
+    selectValue.innerText = this.innerText;
+    filterFunc(selectedValue);
+
+    lastClickedBtn.classList.remove('active');
+    this.classList.add('active');
+    lastClickedBtn = this
+  })
+}
+
 // // add event in all select items
-for (let i = 0; i < selectItem.length; i++) {
-  selectItem[i].addEventListener('click', function() {
+for (let i = 0; i < selectItems.length; i++) {
+  selectItems[i].addEventListener('click', function() {
     let selectedValue = this.innerText.toLowerCase();
     selectValue.innerText = this.innerText;
     elementToggle(select);
