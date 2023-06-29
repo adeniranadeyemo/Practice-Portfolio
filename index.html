@@ -1,985 +1,1137 @@
 <!DOCTYPE html>
 <html>
-
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>Practice Portfolio</title>
-		<link rel="stylesheet" href="style.css" />
-
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
-		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-		<!--  -->
-	</head>
-
-	<body>
-		<!-- Main -->
-		<main>
-
-			<!-- Sidebar -->
-			<aside class="sidebar" data-sidebar>
-				<!--  -->
-				<div class="sidebar-info">
-					<figure class="avatar-box">
-						<img src="images/my-avatar.png" alt="Richard Hanrick" width="80" />
-					</figure>
-
-					<div class="info-content">
-						<h1 class="name" title="Adeniran Adeyemo">Adeniran Adeyemo</h1>
-						<p class="title">Web Developer</p>
-					</div>
-
-					<button class="info_more-btn" data-sidebar-btn>
-						<span>Show Contact</span>
-
-						<span class="material-icons-outlined">keyboard_arrow_down</span>
-					</button>
-				</div>
-
-				<div class="sidebar-info-more">
-					<div class="separator"></div>
-
-					<ul class="contacts-list">
-						<li class="contact-item">
-							<div class="icon-box">
-								<span class="material-icons-outlined"> email </span>
-							</div>
-
-							<div class="contact-info">
-								<p class="contact-title">Email</p>
-								<a href="mailto:niranadeniran1@gmail.com" class="contact-link">niranadeniran1@gmail.com</a>
-							</div>
-						</li>
-
-						<li class="contact-item">
-							<div class="icon-box">
-								<span class="material-icons-outlined"> smartphone </span>
-							</div>
-
-							<div class="contact-info">
-								<p class="contact-title">Phone</p>
-								<a href="tel:+23480123456789" class="contact-link">+23480123456789</a>
-							</div>
-						</li>
-
-						<li class="contact-item">
-							<div class="icon-box">
-								<span class="material-icons-outlined"> calendar_month </span>
-							</div>
-
-							<div class="contact-info">
-								<p class="contact-title">Birthday</p>
-								<time datetime="1400-06-23">June 23, 1400</time>
-							</div>
-						</li>
-
-						<li class="contact-item">
-							<div class="icon-box">
-								<span class="material-icons-outlined"> place </span>
-							</div>
-
-							<div class="contact-info">
-								<p class="contact-title">Location</p>
-								<address>Firenze, Italy.</address>
-							</div>
-						</li>
-					</ul>
-
-					<div class="separator"></div>
-
-					<ul class="social-list">
-						<li class="social-item">
-							<a href="" class="social-link">
-								<i class="bx bxl-facebook"></i>
-							</a>
-						</li>
-
-						<li class="social-item">
-							<a href="" class="social-link">
-								<i class="bx bxl-twitter"></i>
-							</a>
-						</li>
-
-						<li class="social-item">
-							<a href="" class="social-link">
-								<i class="bx bxl-instagram-alt"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</aside>
-			<!-- Sidebar ends -->
-
-			<!-- Main Content -->
-			<div class="main-content">
-
-				<!-- navbar -->
-				<nav class="navbar">
-					<ul class="navbar-list">
-						<li class="navbar-item">
-							<button class="navbar-link active" data-nav-link>About</button>
-						</li>
-
-						<li class="navbar-item">
-							<button class="navbar-link" data-nav-link>Resume</button>
-						</li>
-
-						<li class="navbar-item">
-							<button class="navbar-link" data-nav-link>Portfolio</button>
-						</li>
-
-						<li class="navbar-item">
-							<button class="navbar-link" data-nav-link>Blog</button>
-						</li>
-
-						<li class="navbar-item">
-							<button class="navbar-link" data-nav-link>Contact</button>
-						</li>
-					</ul>
-				</nav>
-
-				<!-- About -->
-				<article class="about active" data-page="about">
-					<header>
-						<h2 class="h2 article-title">About me</h2>
-					</header>
-
-					<section class="about-text">
-						<p>
-							I'm an Anatomist and a Designer (Graphic & Brand designer) from
-							Ibadan, Nigeria, working in web development. Creating simple,
-							aesthetic and functional designs from clients' briefs which helps
-							to solve their problems is something I cherish.
-						</p>
-
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-							fugiat beatae quisquam sunt deserunt quae pariatur fugit maxime
-							soluta debitis, saepe optio ullam aliquid ipsa unde, iusto
-							incidunt facere voluptatibus.
-						</p>
-					</section>
-
-					<section class="services">
-						<h3 class="h4 service-title">What I do</h3>
-
-						<ul class="service-list">
-							<li class="service-item">
-								<div class="service-icon-box">
-									<img src="images/icon-design.svg" alt="design icon" width="48" />
-								</div>
-
-								<div class="service-content-box">
-									<h4 class="h4 service-item-title">Graphic Design</h4>
-
-									<p class="service-item-text">
-										The most modern and high-quality designs made at a
-										professional level.
-									</p>
-								</div>
-							</li>
-
-							<li class="service-item">
-								<div class="service-icon-box">
-									<img src="images/icon-dev.svg" alt="web development icon" width="48" />
-								</div>
-
-								<div class="service-content-box">
-									<h4 class="h4 service-item-title">Web development</h4>
-
-									<p class="service-item-text">
-										High-quality development of sites made at a professional
-										level.
-									</p>
-								</div>
-							</li>
-
-							<li class="service-item">
-								<div class="service-icon-box">
-									<img src="images/icon-app.svg" alt="phone icon" width="48" />
-								</div>
-
-								<div class="service-content-box">
-									<h4 class="h4 service-item-title">Mobile apps</h4>
-
-									<p class="service-item-text">
-										Professional development of iOS and Android applications.
-									</p>
-								</div>
-							</li>
-
-							<li class="service-item">
-								<div class="service-icon-box">
-									<img src="images/icon-photo.svg" alt="camera icon" width="48" />
-								</div>
-
-								<div class="service-content-box">
-									<h4 class="h4 service-item-title">Photography</h4>
-
-									<p class="service-item-text">
-										High-quality photos of any category at a professional level.
-									</p>
-								</div>
-							</li>
-						</ul>
-					</section>
-
-					<section class="testimonials">
-						<h3 class="h3 testimonials-title">Testimonials</h3>
-
-						<ul class="testimonials-list has-scrollbar">
-							<li class="testimonials-item">
-								<div class="content-card" data-testimonials-item>
-									<figure class="testimonials-avatar-box">
-										<img src="images/avatar-1.png" alt="Daniel Lewis" width="60" data-testimonials-avatar />
-									</figure>
-
-									<h4 class="h4 testimonials-item-title" data-testimonials-title>
-										Daniel Lewis
-									</h4>
-
-									<div class="testimonials-text" data-testimonials-text>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
-											iusto eos pariatur voluptatem error officiis et omnis
-											laborum magni? Asperiores beatae, quae.
-										</p>
-									</div>
-								</div>
-							</li>
-
-							<li class="testimonials-item">
-								<div class="content-card" data-testimonials-item>
-									<figure class="testimonials-avatar-box">
-										<img src="images/avatar-2.png" alt="Jessica Miller" width="60" data-testimonials-avatar />
-									</figure>
-
-									<h4 class="h4 testimonials-item-title" data-testimonials-title>
-										Jessica Miller
-									</h4>
-
-									<div class="testimonials-text" data-testimonials-text>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
-											iusto eos pariatur voluptatem error officiis et omnis
-											laborum magni? Asperiores beatae, quae.
-										</p>
-									</div>
-								</div>
-							</li>
-
-							<li class="testimonials-item">
-								<div class="content-card" data-testimonials-item>
-									<figure class="testimonials-avatar-box">
-										<img src="images/avatar-3.png" alt="Emily Evans" width="60" data-testimonials-avatar />
-									</figure>
-
-									<h4 class="h4 testimonials-item-title" data-testimonials-title>
-										Emily Evans
-									</h4>
-
-									<div class="testimonials-text" data-testimonials-text>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
-											iusto eos pariatur voluptatem error officiis et omnis
-											laborum magni? Asperiores beatae, quae.
-										</p>
-									</div>
-								</div>
-							</li>
-
-							<li class="testimonials-item">
-								<div class="content-card" data-testimonials-item>
-									<figure class="testimonials-avatar-box">
-										<img src="images/avatar-4.png" alt="Henry William" width="60" data-testimonials-avatar />
-									</figure>
-
-									<h4 class="h4 testimonials-item-title" data-testimonials-title>
-										Henry William
-									</h4>
-
-									<div class="testimonials-text" data-testimonials-text>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
-											iusto eos pariatur voluptatem error officiis et omnis
-											laborum magni? Asperiores beatae, quae.
-										</p>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</section>
-
-					<!-- Modal -->
-					<div class="modal-container" data-modal-container>
-						<div class="overlay" data-overlay>
-							<!--  -->
-							<section class="testimonials-modal">
-								<!--  -->
-								<button class="modal-close-btn" data-modal-close-btn>
-									<span class="material-icons-outlined"> close</span>
-								</button>
-
-								<div class="modal-img-wrapper">
-									<figure class="modal-avatar-box">
-										<img src="images/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img />
-									</figure>
-
-									<img src="images/icon-quote.svg" alt="quote icon" />
-								</div>
-
-								<div class="modal-content">
-									<h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
-
-									<time datetime="2021-06-14">14 June, 2021</time>
-
-									<div data-modal-text>
-										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
-											iusto eos pariatur voluptatem error officiis et omnis
-											laborum magni? Asperiores beatae, quae.
-										</p>
-									</div>
-								</div>
-							</section>
-						</div>
-					</div>
-
-					<!-- Clients -->
-					<section class="clients">
-						<h3 class="h3 clients-title">Clients</h3>
-
-						<ul class="clients-list has-scrollbar">
-							<li class="clients-item">
-								<a href="">
-									<img src="images/logo-1-color.png" alt="clients-logo" />
-								</a>
-							</li>
-
-							<li class="clients-item">
-								<a href="">
-									<img src="images/logo-2-color.png" alt="clients-logo" />
-								</a>
-							</li>
-
-							<li class="clients-item">
-								<a href="">
-									<img src="images/logo-3-color.png" alt="clients-logo" />
-								</a>
-							</li>
-
-							<li class="clients-item">
-								<a href="">
-									<img src="images/logo-4-color.png" alt="clients-logo" />
-								</a>
-							</li>
-
-							<li class="clients-item">
-								<a href="">
-									<img src="images/logo-5-color.png" alt="clients-logo" />
-								</a>
-							</li>
-
-							<li class="clients-item">
-								<a href="">
-									<img src="images/logo-6-color.png" alt="clients-logo" />
-								</a>
-							</li>
-						</ul>
-					</section>
-				</article>
-
-				<!-- Resume -->
-				<article class="resume" data-page="resume">
-					<header>
-						<h2 class="h2 article-title">Resume</h2>
-					</header>
-
-					<section class="timeline">
-						<div class="title-wrapper">
-							<div class="icon-box">
-								<span class="material-icons-outlined"> book </span>
-							</div>
-
-							<h3 class="h3">Education</h3>
-						</div>
-
-						<ol class="timeline-list">
-							<li class="timeline-item">
-								<h4 class="h4 timeline-item-title">
-									University School of The Arts
-								</h4>
-
-								<span>2007 - 2008</span>
-
-								<p class="timeline-text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Inventore dolores dignissimos porro, possimus reiciendis.
-								</p>
-							</li>
-
-							<li class="timeline-item">
-								<h4 class="h4 timeline-item-title">New York Academy of art</h4>
-
-								<span>2006- 2007</span>
-
-								<p class="timeline-text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Inventore dolores dignissimos porro, possimus reiciendis.
-								</p>
-							</li>
-
-							<li class="timeline-item">
-								<h4 class="h4 timeline-item-title">
-									High School of Art and Design
-								</h4>
-
-								<span>2002 - 2004</span>
-
-								<p class="timeline-text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Inventore dolores dignissimos porro, possimus reiciendis.
-								</p>
-							</li>
-						</ol>
-					</section>
-
-					<section class="timeline">
-						<div class="title-wrapper">
-							<div class="icon-box">
-								<span class="material-icons-outlined"> book </span>
-							</div>
-
-							<h3 class="h3">Experience</h3>
-						</div>
-
-						<ol class="timeline-list">
-							<li class="timeline-item">
-								<h4 class="h4 timeline-item-title">Creative Director</h4>
-
-								<span>2015 - Present</span>
-
-								<p class="timeline-text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Inventore dolores dignissimos porro, possimus reiciendis.
-								</p>
-							</li>
-
-							<li class="timeline-item">
-								<h4 class="h4 timeline-item-title">Art Director</h4>
-
-								<span>2013 - 2015</span>
-
-								<p class="timeline-text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Inventore dolores dignissimos porro, possimus reiciendis.
-								</p>
-							</li>
-
-							<li class="timeline-item">
-								<h4 class="h4 timeline-item-title">Web Developer</h4>
-
-								<span>2010 - 2013</span>
-
-								<p class="timeline-text">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-									Inventore dolores dignissimos porro, possimus reiciendis.
-								</p>
-							</li>
-						</ol>
-					</section>
-
-					<section class="skill">
-						<h3 class="h3 skills-title">My Skills</h3>
-
-						<ul class="skills-list content-card">
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<h5 class="h5">Web design</h5>
-
-									<data value="80">80%</data>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 80%"></div>
-								</div>
-							</li>
-
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<h5 class="h5">Graphic design</h5>
-
-									<data value="70">70%</data>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 70%"></div>
-								</div>
-							</li>
-
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<h5 class="h5">Branding</h5>
-
-									<data value="90">90%</data>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 90%"></div>
-								</div>
-							</li>
-
-							<li class="skills-item">
-								<div class="title-wrapper">
-									<h5 class="h5">WordPress</h5>
-
-									<data value="50">50%</data>
-								</div>
-
-								<div class="skill-progress-bg">
-									<div class="skill-progress-fill" style="width: 50%"></div>
-								</div>
-							</li>
-						</ul>
-					</section>
-				</article>
-
-				<!-- Portfolio -->
-				<article class="portfolio" data-page="portfolio">
-					<header>
-						<h2 class="h2 article-title">Portfolio</h2>
-					</header>
-
-					<section class="projects">
-						<ul class="filter-list">
-							<li class="filter-item">
-								<button class="active" data-filter-btn>All</button>
-							</li>
-
-							<li class="filter-item">
-								<button data-filter-btn>Web design</button>
-							</li>
-
-							<li class="filter-item">
-								<button data-filter-btn>Applications</button>
-							</li>
-
-							<li class="filter-item">
-								<button data-filter-btn>Web development</button>
-							</li>
-						</ul>
-
-						<div class="filter-select-box">
-							<button class="filter-select" data-select>
-								<div class="select-value" data-select-value>
-									Select category
-								</div>
-
-								<div class="select-icon">
-									<span class="material-icons-outlined">keyboard_arrow_down</span>
-								</div>
-							</button>
-
-							<ul class="select-list">
-								<li class="select-item">
-									<button data-select-item>All</button>
-								</li>
-
-								<li class="select-item">
-									<button data-select-item>Web design</button>
-								</li>
-
-								<li class="select-item">
-									<button data-select-item>Applications</button>
-								</li>
-
-								<li class="select-item">
-									<button data-select-item>Web development</button>
-								</li>
-							</ul>
-						</div>
-
-						<ul class="project-list">
-							<li class="project-item active" data-filter-item data-category="web development">
-								<a href="#">
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<span class="material-icons-outlined"> visibility </span>
-										</div>
-
-										<img src="images/project-1.jpg" alt="finance" loading="lazy" />
-									</figure>
-
-									<h3 class="project-title">Finance</h3>
-
-									<p class="project-category">Web development</p>
-								</a>
-							</li>
-
-							<li class="project-item active" data-filter-item data-category="web development">
-								<a href="#">
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<span class="material-icons-outlined"> visibility </span>
-										</div>
-
-										<img src="images/project-2.png" alt="orizon" loading="lazy" />
-									</figure>
-
-									<h3 class="project-title">Orizon</h3>
-
-									<p class="project-category">Web development</p>
-								</a>
-							</li>
-
-							<li class="project-item active" data-filter-item data-category="web design">
-								<a href="#">
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<span class="material-icons-outlined"> visibility </span>
-										</div>
-
-										<img src="images/project-3.jpg" alt="fundo" loading="lazy" />
-									</figure>
-
-									<h3 class="project-title">Fundo</h3>
-
-									<p class="project-category">Web design</p>
-								</a>
-							</li>
-
-							<li class="project-item active" data-filter-item data-category="applications">
-								<a href="#">
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<span class="material-icons-outlined"> visibility </span>
-										</div>
-
-										<img src="images/project-4.png" alt="brawlhalla" loading="lazy" />
-									</figure>
-
-									<h3 class="project-title">Brawlhalla</h3>
-
-									<p class="project-category">Applications</p>
-								</a>
-							</li>
-
-							<li class="project-item active" data-filter-item data-category="web design">
-								<a href="#">
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<span class="material-icons-outlined"> visibility </span>
-										</div>
-
-										<img src="images/project-5.png" alt="dsm." loading="lazy" />
-									</figure>
-
-									<h3 class="project-title">DSM.</h3>
-
-									<p class="project-category">Web design</p>
-								</a>
-							</li>
-
-							<li class="project-item active" data-filter-item data-category="web design">
-								<a href="#">
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<span class="material-icons-outlined"> visibility </span>
-										</div>
-
-										<img src="images/project-6.png" alt="metaspark" loading="lazy" />
-									</figure>
-
-									<h3 class="project-title">Metaspark</h3>
-
-									<p class="project-category">Web design</p>
-								</a>
-							</li>
-
-							<li class="project-item active" data-filter-item data-category="web development">
-								<a href="#">
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<span class="material-icons-outlined"> visibility </span>
-										</div>
-
-										<img src="images/project-7.png" alt="summary" loading="lazy" />
-									</figure>
-
-									<h3 class="project-title">Summary</h3>
-
-									<p class="project-category">Web development</p>
-								</a>
-							</li>
-
-							<li class="project-item active" data-filter-item data-category="applications">
-								<a href="#">
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<span class="material-icons-outlined"> visibility </span>
-										</div>
-
-										<img src="images/project-8.jpg" alt="task manager" loading="lazy" />
-									</figure>
-
-									<h3 class="project-title">Task Manager</h3>
-
-									<p class="project-category">Applications</p>
-								</a>
-							</li>
-
-							<li class="project-item active" data-filter-item data-category="web development">
-								<a href="#">
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<span class="material-icons-outlined"> visibility </span>
-										</div>
-
-										<img src="images/project-9.png" alt="arrival" loading="lazy" />
-									</figure>
-
-									<h3 class="project-title">Arrival</h3>
-
-									<p class="project-category">Web development</p>
-								</a>
-							</li>
-						</ul>
-					</section>
-				</article>
-
-				<!-- Blog -->
-				<article class="blog" data-page="blog">
-					<header>
-						<h2 class="h2 article-title">Blog</h2>
-					</header>
-
-					<section class="blog-posts">
-						<ul class="blog-post-list">
-							<li class="blog-post-item">
-								<a href="#">
-									<figure class="blog-banner-box">
-										<img src="images/blog-1.jpg" alt="Design conferences in 1500" loading="lazy" />
-									</figure>
-
-									<div class="blog-content">
-										<div class="blog-meta">
-											<p class="blog-category">Design</p>
-
-											<span class="dot"></span>
-											<time datetime="1500-02-23">Feb 23, 1500</time>
-										</div>
-
-										<h3 class="h3 blog-item-title">
-											Design conferences in 1500
-										</h3>
-
-										<p class="blog-text">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-										</p>
-									</div>
-								</a>
-							</li>
-
-							<li class="blog-post-item">
-								<a href="#">
-									<figure class="blog-banner-box">
-										<img src="images/blog-2.jpg" alt="Best fonts every designer" loading="lazy" />
-									</figure>
-
-									<div class="blog-content">
-										<div class="blog-meta">
-											<p class="blog-category">Design</p>
-
-											<span class="dot"></span>
-											<time datetime="1500-02-23">Feb 23, 1500</time>
-										</div>
-
-										<h3 class="h3 blog-item-title">
-											Design Fonts Every Designer
-										</h3>
-
-										<p class="blog-text">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-										</p>
-									</div>
-								</a>
-							</li>
-
-							<li class="blog-post-item">
-								<a href="#">
-									<figure class="blog-banner-box">
-										<img src="images/blog-3.jpg" alt="Design conferences in 1500" loading="lazy" />
-									</figure>
-
-									<div class="blog-content">
-										<div class="blog-meta">
-											<p class="blog-category">Design</p>
-
-											<span class="dot"></span>
-											<time datetime="1500-02-23">Feb 23, 1500</time>
-										</div>
-
-										<h3 class="h3 blog-item-title">
-											Design Digest #80
-										</h3>
-
-										<p class="blog-text">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-										</p>
-									</div>
-								</a>
-							</li>
-
-							<li class="blog-post-item">
-								<a href="#">
-									<figure class="blog-banner-box">
-										<img src="images/blog-4.jpg" alt="Design conferences in 1500" loading="lazy" />
-									</figure>
-
-
-									<div class="blog-content">
-
-										<div class="blog-meta">
-											<p class="blog-category">Design</p>
-
-											<span class="dot"></span>
-											<time datetime="1500-02-23">Feb 23, 1500</time>
-										</div>
-
-										<h3 class="h3 blog-item-title">
-											UI Interaction of The Week
-										</h3>
-
-										<p class="blog-text">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-										</p>
-
-									</div>
-								</a>
-							</li>
-
-							<li class="blog-post-item">
-								<a href="#">
-									<figure class="blog-banner-box">
-										<img src="images/blog-5.jpg" alt="Design conferences in 1500" loading="lazy" />
-									</figure>
-
-									<div class="blog-content">
-										<div class="blog-meta">
-											<p class="blog-category">Design</p>
-
-											<span class="dot"></span>
-											<time datetime="1500-02-23">Feb 23, 1500</time>
-										</div>
-
-										<h3 class="h3 blog-item-title">
-											The Forgotten Art of Spacing
-										</h3>
-
-										<p class="blog-text">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-										</p>
-									</div>
-								</a>
-							</li>
-
-							<li class="blog-post-item">
-								<a href="#">
-									<figure class="blog-banner-box">
-										<img src="images/blog-6.jpg" alt="Design conferences in 1500" loading="lazy" />
-									</figure>
-
-									<div class="blog-content">
-										<div class="blog-meta">
-											<p class="blog-category">Design</p>
-
-											<span class="dot"></span>
-											<time datetime="1500-02-23">Feb 23, 1500</time>
-										</div>
-
-										<h3 class="h3 blog-item-title">
-											Design digest #79
-										</h3>
-
-										<p class="blog-text">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-										</p>
-
-									</div>
-								</a>
-							</li>
-						</ul>
-
-					</section>
-				</article>
-
-				<!-- Contact -->
-				<article class="contact" data-page="contact">
-
-					<header>
-						<h2 class="h2 article-title">
-							Contact
-						</h2>
-					</header>
-
-					<section class="mapbox" data-mapbox>
-						<figure>
-							<!-- <iframe
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Practice Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--  -->
+  </head>
+
+  <body>
+    <!-- Main -->
+    <main>
+      <!-- Sidebar -->
+      <aside class="sidebar" data-sidebar>
+        <!--  -->
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="images/my-avatar.png" alt="Richard Hanrick" width="80" />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Adeniran Adeyemo">Adeniran Adeyemo</h1>
+            <p class="title">Web Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contact</span>
+
+            <span class="material-icons-outlined">keyboard_arrow_down</span>
+          </button>
+        </div>
+
+        <div class="sidebar-info-more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <span class="material-icons-outlined"> email </span>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:niranadeniran1@gmail.com" class="contact-link"
+                  >niranadeniran1@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <span class="material-icons-outlined"> smartphone </span>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+23480123456789" class="contact-link"
+                  >+23480123456789</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <span class="material-icons-outlined"> calendar_month </span>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="1400-06-23">June 23, 1400</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <span class="material-icons-outlined"> place </span>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Firenze, Italy.</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="" class="social-link">
+                <i class="bx bxl-facebook"></i>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="" class="social-link">
+                <i class="bx bxl-twitter"></i>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="" class="social-link">
+                <i class="bx bxl-instagram-alt"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- Sidebar ends -->
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- navbar -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- About -->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm an Anatomist, a front end developer and a Designer (Graphic &
+              Brand designer) from Ibadan, Nigeria. Creating simple, aesthetic
+              and functional designs that solve problems is something I cherish.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              fugiat beatae quisquam sunt deserunt quae pariatur fugit maxime
+              soluta debitis, saepe optio ullam aliquid ipsa unde, iusto
+              incidunt facere voluptatibus.
+            </p>
+          </section>
+
+          <section class="services">
+            <h3 class="h4 service-title">What I do</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="images/icon-design.svg"
+                    alt="design icon"
+                    width="48"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Graphic Design</h4>
+
+                  <p class="service-item-text">
+                    The most modern and high-quality designs made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="images/icon-dev.svg"
+                    alt="web development icon"
+                    width="48"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of sites made at a professional
+                    level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="images/icon-app.svg" alt="phone icon" width="48" />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                  <p class="service-item-text">
+                    Professional development of iOS and Android applications.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="images/icon-photo.svg"
+                    alt="camera icon"
+                    width="48"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Photography</h4>
+
+                  <p class="service-item-text">
+                    High-quality photos of any category at a professional level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="images/avatar-1.png"
+                      alt="Daniel Lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Daniel Lewis
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
+                      iusto eos pariatur voluptatem error officiis et omnis
+                      laborum magni? Asperiores beatae, quae.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="images/avatar-2.png"
+                      alt="Jessica Miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Jessica Miller
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
+                      iusto eos pariatur voluptatem error officiis et omnis
+                      laborum magni? Asperiores beatae, quae.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="images/avatar-3.png"
+                      alt="Emily Evans"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Emily Evans
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
+                      iusto eos pariatur voluptatem error officiis et omnis
+                      laborum magni? Asperiores beatae, quae.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="images/avatar-4.png"
+                      alt="Henry William"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Henry William
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
+                      iusto eos pariatur voluptatem error officiis et omnis
+                      laborum magni? Asperiores beatae, quae.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Modal -->
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay>
+              <!--  -->
+              <section class="testimonials-modal">
+                <!--  -->
+                <button class="modal-close-btn" data-modal-close-btn>
+                  <span class="material-icons-outlined"> close</span>
+                </button>
+
+                <div class="modal-img-wrapper">
+                  <figure class="modal-avatar-box">
+                    <img
+                      src="images/avatar-1.png"
+                      alt="Daniel Lewis"
+                      width="80"
+                      data-modal-img
+                    />
+                  </figure>
+
+                  <img src="images/icon-quote.svg" alt="quote icon" />
+                </div>
+
+                <div class="modal-content">
+                  <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
+
+                  <time datetime="2021-06-14">14 June, 2021</time>
+
+                  <div data-modal-text>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Ex odio eveniet magnam deserunt hic maiores! Dolor aliquam
+                      iusto eos pariatur voluptatem error officiis et omnis
+                      laborum magni? Asperiores beatae, quae.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <!-- Clients -->
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="">
+                  <img src="images/logo-1-color.png" alt="clients-logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="">
+                  <img src="images/logo-2-color.png" alt="clients-logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="">
+                  <img src="images/logo-3-color.png" alt="clients-logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="">
+                  <img src="images/logo-4-color.png" alt="clients-logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="">
+                  <img src="images/logo-5-color.png" alt="clients-logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="">
+                  <img src="images/logo-6-color.png" alt="clients-logo" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Resume -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <span class="material-icons-outlined"> book </span>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  University School of The Arts
+                </h4>
+
+                <span>2007 - 2008</span>
+
+                <p class="timeline-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Inventore dolores dignissimos porro, possimus reiciendis.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">New York Academy of art</h4>
+
+                <span>2006- 2007</span>
+
+                <p class="timeline-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Inventore dolores dignissimos porro, possimus reiciendis.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  High School of Art and Design
+                </h4>
+
+                <span>2002 - 2004</span>
+
+                <p class="timeline-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Inventore dolores dignissimos porro, possimus reiciendis.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <span class="material-icons-outlined"> book </span>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Creative Director</h4>
+
+                <span>2015 - Present</span>
+
+                <p class="timeline-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Inventore dolores dignissimos porro, possimus reiciendis.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Art Director</h4>
+
+                <span>2013 - 2015</span>
+
+                <p class="timeline-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Inventore dolores dignissimos porro, possimus reiciendis.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Web Developer</h4>
+
+                <span>2010 - 2013</span>
+
+                <p class="timeline-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Inventore dolores dignissimos porro, possimus reiciendis.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My Skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web design</h5>
+
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Graphic design</h5>
+
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Branding</h5>
+
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">WordPress</h5>
+
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Portfolio -->
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <span class="material-icons-outlined"
+                    >keyboard_arrow_down</span
+                  >
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <span class="material-icons-outlined"> visibility </span>
+                    </div>
+
+                    <img
+                      src="images/project-1.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Finance</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <span class="material-icons-outlined"> visibility </span>
+                    </div>
+
+                    <img
+                      src="images/project-2.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Orizon</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <span class="material-icons-outlined"> visibility </span>
+                    </div>
+
+                    <img
+                      src="images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Fundo</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <span class="material-icons-outlined"> visibility </span>
+                    </div>
+
+                    <img
+                      src="images/project-4.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Brawlhalla</h3>
+
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <span class="material-icons-outlined"> visibility </span>
+                    </div>
+
+                    <img src="images/project-5.png" alt="dsm." loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">DSM.</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <span class="material-icons-outlined"> visibility </span>
+                    </div>
+
+                    <img
+                      src="images/project-6.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Metaspark</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <span class="material-icons-outlined"> visibility </span>
+                    </div>
+
+                    <img
+                      src="images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Summary</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <span class="material-icons-outlined"> visibility </span>
+                    </div>
+
+                    <img
+                      src="images/project-8.jpg"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Task Manager</h3>
+
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <span class="material-icons-outlined"> visibility </span>
+                    </div>
+
+                    <img
+                      src="images/project-9.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Arrival</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Blog -->
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-post-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="images/blog-1.jpg"
+                      alt="Design conferences in 1500"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+                      <time datetime="1500-02-23">Feb 23, 1500</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 1500
+                    </h3>
+
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+                      <time datetime="1500-02-23">Feb 23, 1500</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Design Fonts Every Designer
+                    </h3>
+
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="images/blog-3.jpg"
+                      alt="Design conferences in 1500"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+                      <time datetime="1500-02-23">Feb 23, 1500</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design Digest #80</h3>
+
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="images/blog-4.jpg"
+                      alt="Design conferences in 1500"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+                      <time datetime="1500-02-23">Feb 23, 1500</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      UI Interaction of The Week
+                    </h3>
+
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="images/blog-5.jpg"
+                      alt="Design conferences in 1500"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+                      <time datetime="1500-02-23">Feb 23, 1500</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      The Forgotten Art of Spacing
+                    </h3>
+
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="images/blog-6.jpg"
+                      alt="Design conferences in 1500"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+                      <time datetime="1500-02-23">Feb 23, 1500</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Contact -->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <!-- <iframe
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacremento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
 								width="400" height="300" loading="lazy"></iframe> -->
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.700556963089!2d3.879029484405339!3d7.387413953943191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d0e6aaaaaab%3A0xceeb94061265aea4!2sShoprite!5e0!3m2!1sen!2sng!4v1683402581875!5m2!1sen!2sng"
-								width="400" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-						</figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.700556963089!2d3.879029484405339!3d7.387413953943191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d0e6aaaaaab%3A0xceeb94061265aea4!2sShoprite!5e0!3m2!1sen!2sng!4v1683402581875!5m2!1sen!2sng"
+                width="400"
+                height="300"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
 
-					</section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-					<section class="contact-form">
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-						<h3 class="h3 form-title">
-							Contact Form
-						</h3>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email"
+                  required
+                  data-form-input
+                />
 
-						<form action="#" class="form" data-form>
+                <textarea
+                  name="message"
+                  class="form-input"
+                  placeholder="Your Message"
+                  required
+                  data-form-input
+                ></textarea>
+              </div>
 
-							<div class="input-wrapper">
-								<input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <span class="material-icons-outlined"> send </span>
 
-								<input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
 
-								<textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-							</div>
+      <!-- Main Content ends -->
+    </main>
 
-							<button class="form-btn" type="submit" disabled data-form-btn>
-								<span class="material-icons-outlined">
-									send
-								</span>
-
-								<span>Send Message</span>
-							</button>
-
-						</form>
-
-					</section>
-
-				</article>
-
-			</div>
-
-			<!-- Main Content ends -->
-		</main>
-
-		<script src="script.js"></script>
-	</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
